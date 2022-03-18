@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
-
+import './Player.css';
 export class Player extends Component{
     constructor(props){
         super(props);
     }
-    turnMessage = this.props.playerTurn ? "YOUR TURN !!!" : "";
+
+    class = this.props.cName;
+
+
     render(){
         return (
-            <div>
-                <h2>Player {this.props.playerNumber}</h2>
-                <h2>{this.turnMessage}</h2>
+            <div className={this.class}>
+                <h2 className='player-name'>Player {this.props.playerNumber}</h2>
+
             </div>
         );
     }

@@ -3,7 +3,6 @@ import './App.css';
 import './TicTacToe.css';
 import Game from './Game.js';
 import { GameHeader } from './GameHeader';
-import { Player } from './Player';
 
 class App extends Component {
 
@@ -15,9 +14,7 @@ class App extends Component {
       <div className="Tic-Tac-Toe">
         <GameHeader/>
         <div className="game-page">
-          <div className="player1-ui"><Player playerNumber = {1} playerTurn = {true}/></div>
-          <div className="game-div"><Game/></div>
-            <div className="player2-ui"><Player playerNumber = {2} playerTurn = {true}/></div>
+          <Game/>
         </div>
       </div>
     );
