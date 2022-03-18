@@ -11,8 +11,8 @@ export function calculateWinner(box,enteredPlayer) {
     ];
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
-      if ((box[a]&&box[b]&&box[c]) && (enteredPlayer[a] == enteredPlayer[b] && enteredPlayer[b] == enteredPlayer[c]) && box[a]+box[b]+box[c] == 15) {
-        return squares[a];
+      if ((box[a]&&box[b]&&box[c]) && (enteredPlayer[a] === enteredPlayer[b] && enteredPlayer[b] === enteredPlayer[c]) && Number(box[a])+Number(box[b])+Number(box[c]) == 15) {
+        return enteredPlayer[a];
       }
     }
     return null;

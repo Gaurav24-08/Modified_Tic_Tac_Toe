@@ -1,6 +1,6 @@
-export function isValidNumber(currentNumber, ...numbersUsed){
+export function isValidNumber(currentNumber, numbersUsed){
     // check whether it's an integer or not
-    if(!Number.isInteger(currentNumber)){
+    if(!Number.isInteger(Number(currentNumber))){
         return false;
     }
     // first check whether current number is in 1 to 9 range

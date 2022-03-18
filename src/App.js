@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './TicTacToe.css';
-import Game1 from './Game1.js';
+import Game from './Game.js';
 import { GameHeader } from './GameHeader';
 import { Player } from './Player';
 
@@ -16,7 +16,7 @@ class App extends Component {
         <GameHeader/>
         <div className="game-page">
           <div className="player1-ui"><Player playerNumber = {1} playerTurn = {true}/></div>
-          <div className="game-div"><Game1/></div>
+          <div className="game-div"><Game/></div>
             <div className="player2-ui"><Player playerNumber = {2} playerTurn = {true}/></div>
         </div>
       </div>
