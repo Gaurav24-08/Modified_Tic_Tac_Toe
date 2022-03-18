@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './TicTacToe.css';
-import Game from './Game.js';
+import Game1 from './Game1.js';
+import { GameHeader } from './GameHeader';
+import { Player } from './Player';
 
 class App extends Component {
+
+  componentDidMount(){
+    document.title = "tic-tac-toe";
+  }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="Tic-Tac-Toe">
+        <GameHeader/>
+        <div className="game-page">
+          <div className="player1-ui"><Player playerNumber = {1} playerTurn = {true}/></div>
+          <div className="game-div"><Game1/></div>
+            <div className="player2-ui"><Player playerNumber = {2} playerTurn = {true}/></div>
         </div>
-        <p className="App-intro">
-          <Game></Game>
-        </p>
       </div>
     );
   }

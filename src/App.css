@@ -1,24 +1,49 @@
-.App {
+.game-page{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.player1-ui, .player2-ui, .game-div{
+  width: 33%;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.player1-ui{
+  background-color: cadetblue;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.player2-ui{
+  background-color:darkkhaki;
+}
+
+
+
+.Tic-Tac-Toe {
+  text-align: center;
+  width: 100%;
+}
+
+.Game-logo {
+  animation: Game-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.App-header {
+.Game-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
+.Game-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes Game-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
