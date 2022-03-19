@@ -62,6 +62,7 @@ class GameSetup extends Component {
     let winner = calculateWinner(this.state.data, this.state.enteredPlayer);
     if (winner != null) {
       alert("Player " + Number(winner+1) + " won the game");
+      location.reload();
     }
   };
 
